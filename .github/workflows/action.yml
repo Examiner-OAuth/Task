@@ -1,5 +1,8 @@
 name: "Ruby on Rails CI"
-on: workflow_dispatch
+on: 
+  push:
+    branches-ignore:
+      - 'dependabot/**'
 jobs:
   test:
     permissions: write-all
