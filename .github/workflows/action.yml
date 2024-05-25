@@ -1,11 +1,7 @@
 name: "Ruby on Rails CI"
-on: 
-  push:
-    branches-ignore:
-      - 'dependabot/**'
+on: workflow_dispatch
 jobs:
   test:
-    permissions: write-all
     runs-on: ubuntu-latest
     env:
       RAILS_ENV: test
